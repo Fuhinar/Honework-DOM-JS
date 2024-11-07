@@ -1,0 +1,189 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #000;
+    position: relative;
+}
+
+header a, header button {
+    color: #fff;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+main {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.phones-section {
+    padding: 50px 0;
+}
+
+.cart-item-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.phone-card {
+    margin-bottom: 30px;
+}
+
+.cart {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.cart-dialog {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.image-phone img {
+    width: 100%;
+    cursor: none;
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: end;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.phone-img {
+    height: 750px; 
+    object-fit: cover; 
+}
+
+.navbar {
+padding: 0;
+}
+
+.navbar-brand {
+margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+color: #fff ;
+padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 0.25rem;
+}
+
+.form-control-dark {
+background-color: rgba(255, 255, 255, 0.2);
+border: none;
+border-radius: 20px;
+box-shadow: none;
+color: #F7ECE1;
+}
+
+.btn-outline-light {
+border-color: #fff;
+color: #fff;
+}
+
+.btn-outline-light:hover {
+background-color: #fff;
+color: #110b11;
+}
+
+.btn-warning {
+background-color: #eec111;
+color: #F7ECE1;
+}
+
+.btn-warning:hover {
+background-color: #F7ECE1;
+color: #110b11;
+}
+
+.cart-icon {
+font-size: 1.5rem;
+margin-left: 15px;
+cursor: pointer;
+}
+
+.image-phone-2 img {
+margin-top: 100px;
+object-fit: cover;
+max-width: 1300px;
+}
+
+.cart-dialog {
+display: none;
+position: absolute;
+top: 100%;
+right: 0;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 0.25rem;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 10px;
+z-index: 1000;
+}
+
+.card-headphones img {
+width: 400px;
+height: 400px;
+object-fit: cover;
+}
+
+h5, h2{
+font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+.form-container {
+    padding: 30px;
+}
+
+.navbar-nav {
+    opacity: 1;
+}
+}
+
+.cart-dialog.show {
+display: block;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./task2.css">
+</head>
+<body>
+    <div class="intro">
+        <h1>Hello Dmitri, go play Minecraft? Or Deadlock? Я кину инвайт если что</h1>
+    </div>
+
+    <div class="gifs-container">
+        <img src="twerking-booty-shaking.gif" alt="twerking-booty-shaking" class="gif-left">
+        <img src="icegif-982.gif" alt="icegif-982.gif" class="gif-right">
+    </div>
+        <h1>Calculator</h1>
+
+        <form id="calculatorForm">
+            <div class="input-group">
+                <label for="num1">Number 1</label>
+                <input type="number" id="num1" class="input-field" placeholder="Type 1st number">
+            </div>
+
+            <div class="input-group">
+                <label for="num2">Number 2</label>
+                <input type="number" id="num2" class="input-field" placeholder="Type 2nd number">
+            </div>
+
+            <div class="input-group">
+                <label for="operation">Operation</label>
+                <select id="operation" class="select-field">
+                    <option value="add">Sum</option>
+                    <option value="subtract">Diff</option>
+                    <option value="multiply">Mulpiply</option>
+                    <option value="divide">Divide</option>
+                </select>
+            </div>
+
+            <button type="button" id="calculateButton" class="btn">Result</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <div class="btn">
+        <h1>
+            <a href="/index.html">Перейти на прошлую страницу</a>
+        </h1>
+    </div>
+
+    <script src="./task2.js"></script>
+</body>
+</html>

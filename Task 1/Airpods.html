@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tech Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style_airpods.css">
+</head>
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Телефоны</a></li>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" background-color: black>
+                              Каталог
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./Iphones.html">Iphone</a></li>
+                              <li><a class="dropdown-item" href="./Airpods.html">AirPods</a></li>
+                              <li><a class="dropdown-item" href="./macbook.html">MacBook</a></li>
+                            </ul>
+                          </div>
+                    <li><a href="https://www.instagram.com/fuhinar/" class="nav-link px-2 text-white">Помощь</a></li>
+                    <li><a href="https://www.instagram.com/fuhinar/" class="nav-link px-2 text-white">Контакты</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2"><a href="./Registration form.html">Login</a></button>
+                    <button type="button" class="btn btn-warning"><a href="./login.html">Login</a></button>
+                    <span class="cart-icon" onclick="toggleCartDialog()">🛒</span>
+                    <div class="cart-dialog" id="cartDialog">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-bold">Идеальный баланс звука и гармонии</h1>
+                <p class="lead fw-normal">Чтобы вернутся на начальную страницу с остальными заданиями, нажмите кнопку ниже</p>
+                <a class="btn btn-outline-secondary" href="/index.html">Посмотреть</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+
+<div class="image-phone">
+    <img src="https://www.istore.kg/media/documents/2023-09-02/airpods-max.webp" alt="Iphone 15 pro max" width="1300px">
+</div>
+
+
+        <section class="phones-section">
+            <div class="container">
+                <h2 class="text-center mb-5">AirPods. Pro. Max</h2>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card-headphones">
+                            <img src="https://asiastore.kg/image/cache/catalog/airpods/airpodsmax/silver/81ifn-rw8ul._ac_sl1500_-1200x1200.jpg" class="card-img-top phone-img" alt="iPhone SE">
+                            <div class="card-body">
+                                <h5 class="card-title">AirPods Max</h5>
+                                <p class="card-text">Harmony is a power of sound</p>
+                                <button class="btn btn-primary addToCartBtn" onclick="addToCart('iPhone 12 Pro Max', 'https://th.bing.com/th/id/R.4cbc9328fe133687d540c58f53a7d89a?rik=dZGHbchbCwCMIA&pid=ImgRaw&r=0', '$999')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card-headphones">
+                            <img src="https://login.kg/image/cache/catalog/new/Aksessuary/Apple/Naushniki/AirPods%20Pro%202/1-1200x800.jpg" class="card-img-top phone-img" alt="iPhone SE 2">
+                            <div class="card-body">
+                                <h5 class="card-title">AirPods Pro 2</h5>
+                                <p class="card-text">The best quality sound in less version</p>
+                                <button class="btn btn-primary addToCartBtn" onclick="addToCart('iPhone 13 Pro Max', 'https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_inline.jpg.large.jpg', '$1099')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card-headphones">
+                            <img src="https://softech.kg/image/cache/d9d08a7a9f45e3eea85ee678c4742c77.jpg" class="card-img-top phone-img" alt="iPhone SE 2">
+                            <div class="card-body">
+                                <h5 class="card-title">AirPods 3</h5>
+                                <p class="card-text">The best quality sound in less version</p>
+                                <button class="btn btn-primary addToCartBtn" onclick="addToCart('iPhone 14 Pro Max', 'https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-deep-purple-220907_inline.jpg.large.jpg', '$1199')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-phone-2">
+            
+            <img src="https://www.themaxstand.com/_nuxt/MaxStand-stills-left-dark-blue-0001.3a2fd86e.webp" alt="lying phone">
+        </div>
+
+        <div class="cart" id="cartContainer">
+            <div class="cart-dialog" id="cartDialog">
+            </div>
+            <div class="cart-total" id="cartTotal">Total Items: 0</div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Tech Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

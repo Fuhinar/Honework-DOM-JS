@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Beautiful Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./registration_form.css">
+</head>
+<body>
+  <header class="bg-dark text-white">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li><a href="Iphones.html" class="nav-link px-2 text-secondary">Главное меню</a></li>
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" background-color: black>
+                Каталог
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Iphones.html">Iphone</a></li>
+                <li><a class="dropdown-item" href="./Airpods.html">AirPods</a></li>
+                <li><a class="dropdown-item" href="./macbook.html">MacBook</a></li>
+              </ul>
+            </div>
+            <li><a href="https://www.instagram.com/fuhinar/" class="nav-link px-2 text-white">Категории</a></li>
+            <li><a href="https://www.instagram.com/fuhinar/" class="nav-link px-2 text-white">Помощь</a></li>
+            <li><a href="./login.html" class="nav-link px-2 text-white">Войти</a></li>
+          </ul>
+  
+          <form class="d-flex">
+            <input type="search" class="form-control form-control-dark me-2" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  
+<div class="container mt-5">
+  <div class="form-container">
+    <form class="row g-3" id="registrationForm">
+      
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Почта</label>
+        <input type="email" class="form-control" id="inputEmail" required>
+        <div class="invalid-feedback">
+          Введите правильный адрес электронной почты.
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <label for="inputPassword" class="form-label">Пароль</label>
+        <input type="password" class="form-control" id="inputPassword" required pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$">
+      </div>
+      
+      <div class="col-md-6">
+        <label for="inputPasswordRepeat" class="form-label">Повторите пароль</label>
+        <input type="password" class="form-control" id="inputPasswordRepeat" required pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">Имя</label>
+        <input type="text" class="form-control" id="inputName" required>
+      </div>
+      
+      <div class="col-md-6">
+        <label for="inputSurname" class="form-label">Фамилия</label>
+        <input type="text" class="form-control" id="inputSurname" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="phoneInput" class="form-label">Номер телефона</label>
+        <input type="text" class="form-control" id="phoneInput" placeholder="+996 *** ** ** **" pattern="^\+996\s\d{3}\s\d{2}\s\d{2}\s\d{2}$" required>
+      </div>
+      
+
+      <div class="col-12 mt-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
+            Я соглашаюсь с условиями использования.
+          </label>
+        </div>
+      </div>
+      <div class="col-12 mt-3">
+        <button type="button" class="btn btn-primary" onclick="saveCredentials()">Зарегистрироваться</button>
+      </div>
+    </form>
+  </div>
+  <div class="btn">
+    <h1>
+        <a href="/index.html">Перейти на прошлую страницу</a>
+    </h1>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./Registration.js"></script>
+
+</body>
+</html>
