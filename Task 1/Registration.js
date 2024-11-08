@@ -43,6 +43,11 @@ document.getElementById('inputEmail').addEventListener('input', function() {
       alert('Пароль должен содержать хотя-бы одну цифру.');
       return;
     }
+
+    if (password.length < 8) {
+      alert('Пароль должен содержать хотя бы 8 символов.');
+      return;
+    }
   
     if (!/^\+996/.test(phone)) {
       alert('Номер телефона должен начинаться с "+996".');
